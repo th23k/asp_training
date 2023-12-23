@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="lab7.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/lab7.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+     <tr class="row-1">
+         <td colspan="2"> 
+            ĐẶNG TRÍ ĐỨC THIÊN  - CCN04.6B
+         </td>
+     </tr>
+     <tr class="row-2">
+         <td class="row-2-col-1">
+             <div>
+                 <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/TinhToan.aspx">Trang Tính toán</asp:HyperLink>
+             </div>
+              <div>
+                  <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/DangKy.aspx">Trang đăng ký thông tin</asp:HyperLink>
+             </div>
+              <div>
+                  <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CapNhatSP.aspx">Cập nhật SP</asp:HyperLink>
+            </div>
+              <div>
+                  <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/TimKiemSP.aspx">Tìm kiếm SP</asp:HyperLink>
+              </div>
+         </td>
+         <td class="row-2-col-2">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+         </td>
+     </tr>
+     <tr class="row-3">
+         <td colspan="3"></td>
+     </tr>
+ </table>
+    </form>
+</body>
+</html>
