@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="lab4.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Css/lab4.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+             <table>
+      <tr class="row-1">
+          <td colspan="2">
+              ASP.NET
+          </td>
+      </tr>
+      <tr class="row-2">
+          <td class="row-2-col-1">
+              <div>
+                  <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/bai2.aspx">Tính USCLN(a,b)</asp:HyperLink>
+              </div>
+               <div>
+                   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/bai3.aspx">Đăng ký thông tin</asp:HyperLink>
+              </div>
+          </td>
+          <td class="row-2-col-2">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  ĐÂY LÀ TRANG CHỦ
+              </asp:ContentPlaceHolder>
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+</asp:ContentPlaceHolder>
+          </td>
+      </tr>
+      <tr class="row-3">
+          <td colspan="3">Design by Đặng Trí Đức Thiên </td>
+      </tr>
+  </table>
+        </div>
+    </form>
+</body>
+</html>
